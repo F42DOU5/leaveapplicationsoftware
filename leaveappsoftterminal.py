@@ -11,14 +11,20 @@ while True:
 	if employeename in employeenameDatabase and employeeid in employeeidDatabase:
 		print('log in successfull')
 		print('What type of leave you need')
-		leavestype = ['Annual Leave', 'Sick Leave', 'Casual Leave']
-		print(leavestype)
-		leavetype = input('Leave:')
-		days= input('How many days:')
-		date= input('Date:')
-		print('Thanks for your application. Soon HR will confirm you through mail.') 
-		break
+		
+		leavesType = ['Annual Leave', 'Sick Leave', 'Casual Leave']
+		print(leavesType)
+		while True:		
+			leavetype = input('Leave:')
+			if leavetype in leavesType:
+				days= input('How many days:')
+				date= input('Dates')
+				print('Thanks for your application. Soon HR will confirm you through mail.') 
+				break
+			else:
+				print('Please type Proper leave type.')
+				continue
 	else:
-		print(' Your user Name or Id is Invalid')
+		print(' Your user Name or Id is Invalid.')
 		continue
 
