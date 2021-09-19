@@ -14,11 +14,14 @@ while True:
 		leavesType = ['Annual Leave', 'Sick Leave', 'Casual Leave']		
 		print(leavesType)
 		leavetype = input('Leave Type:')
-		days = input('How many days:')
-		print('Date:dd.mm.yy to dd.mm.yy')
-		date = input('Date:')
-		print('Thanks for your application. Soon HR will confirm you through mail.') 
-		break
+		if leavetype == '':
+			print('Please fill up your leave type.')
+		else:
+			days = input('How many days:')
+			print('Date:dd.mm.yy to dd.mm.yy')
+			date = input('Date:')
+			print('Thanks for your application. Soon HR will confirm you through mail.') 
+			break
 			
 	else:
 		print(' Your user Name or Id is Invalid.')
