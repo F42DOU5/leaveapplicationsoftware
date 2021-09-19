@@ -18,10 +18,16 @@ while True:
 			print('Please fill up your leave type.')
 		else:
 			days = input('How many days:')
-			print('Date:dd.mm.yy to dd.mm.yy')
-			date = input('Date:')
-			print('Thanks for your application. Soon HR will confirm you through mail.') 
-			break
+			if days == '':
+				print('Please fill up your required days.')
+			else:
+				print('Date:dd.mm.yy to dd.mm.yy')
+				date = input('Date:')
+				if date == '':
+					print('Please fill up date.')
+				else:
+					print('Thanks for your application. Soon HR will confirm you through mail.') 
+					break
 			
 	else:
 		print(' Your user Name or Id is Invalid.')
