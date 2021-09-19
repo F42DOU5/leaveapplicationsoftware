@@ -13,7 +13,7 @@ while True:
 		print('What type of leave you need')
 		leavesType = ['Annual Leave', 'Sick Leave', 'Casual Leave']		
 		print(leavesType)
-		print('input your required days please')
+		leavetype = input('Leave Type:')
 		days = input('How many days:')
 		print('Date:dd.mm.yy to dd.mm.yy')
 		date = input('Date:')
