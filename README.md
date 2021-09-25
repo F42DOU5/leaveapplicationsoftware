@@ -12,4 +12,4 @@
 1. employeeid and employeename wise login process
 2. input leave type: done
 3. input leave days: done
-4. inout leave date: done
+4. input leave date: done
